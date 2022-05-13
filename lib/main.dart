@@ -61,9 +61,7 @@ class MyApp extends StatelessWidget {
             return locale;
           },
           theme: ThemeData(
-            primarySwatch: Colors.purple,
-            primaryColor: AppColors.primaryColor,
-            accentColor: AppColors.primaryColorAccent,
+            primaryColor: AppColors.primaryColor, colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.purple).copyWith(secondary: AppColors.primaryColorAccent),
           ),
           debugShowCheckedModeBanner: false,
           home: isLogin ? MainPage() : LoginPage(),

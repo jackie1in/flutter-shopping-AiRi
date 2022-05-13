@@ -9,6 +9,7 @@ import 'package:AiRi/utils/my_navigator.dart';
 
 class OrderItem extends StatelessWidget {
   final orderItemData;
+
   const OrderItem({Key? key, this.orderItemData}) : super(key: key);
 
   @override
@@ -209,6 +210,7 @@ class Content extends StatelessWidget {
 /// 底部
 class Bottom extends StatelessWidget {
   const Bottom({Key? key}) : super(key: key);
+
   // 弹出对话框
   void _showCancelDialog(BuildContext context) {
     showDialog(
@@ -309,13 +311,15 @@ class Bottom extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
-                OutlineButton(
-                  shape: RoundedRectangleBorder(
-                      side: BorderSide.none,
-                      borderRadius: BorderRadius.all(Radius.circular(50))),
+                OutlinedButton(
+                  style: OutlinedButton.styleFrom(
+                    shape: RoundedRectangleBorder(
+                        side: BorderSide.none,
+                        borderRadius: BorderRadius.all(Radius.circular(50))),
+                    primary: AppColors.splashColor,
+                    elevation: 5.0,
+                  ),
                   onPressed: () {},
-                  highlightElevation: 5.0,
-                  splashColor: AppColors.splashColor,
                   child: Center(
                     child: Text(
                       '联系客服',
@@ -327,13 +331,15 @@ class Bottom extends StatelessWidget {
                     ),
                   ),
                 ),
-                OutlineButton(
-                  shape: RoundedRectangleBorder(
-                      side: BorderSide.none,
-                      borderRadius: BorderRadius.all(Radius.circular(50))),
+                OutlinedButton(
+                  style: OutlinedButton.styleFrom(
+                    shape: RoundedRectangleBorder(
+                        side: BorderSide.none,
+                        borderRadius: BorderRadius.all(Radius.circular(50))),
+                    primary: AppColors.splashColor,
+                    elevation: 5.0,
+                  ),
                   onPressed: () => _showCancelDialog(context),
-                  splashColor: AppColors.splashColor,
-                  highlightElevation: 5.0,
                   child: Center(
                     child: Text(
                       '取消订单',

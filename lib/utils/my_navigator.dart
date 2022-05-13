@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:AiRi/pages/main/store/main_provider.dart';
@@ -14,6 +13,7 @@ class MyNavigator {
     Navigator.of(_ctx).push(
       MaterialPageRoute(builder: (_ctx) => page),
     );
+    return null;
   }
 
   // pop 返回

@@ -1,4 +1,3 @@
-import 'package:AiRi/components/bottom_button.dart';
 import 'package:AiRi/components/components.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';

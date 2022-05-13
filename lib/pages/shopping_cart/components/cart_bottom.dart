@@ -102,7 +102,7 @@ class CartBottom extends StatelessWidget {
                 return tuple.item1
                     ? Container(
                         padding: EdgeInsets.only(right: 10.0),
-                        child: OutlineButton(
+                        child: OutlinedButton(
                           child: Text(
                             '删除 (' + tuple.item2.toString() + ')',
                             style: TextStyle(

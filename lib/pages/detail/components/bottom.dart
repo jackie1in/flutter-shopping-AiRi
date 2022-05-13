@@ -4,7 +4,6 @@ import 'package:AiRi/pages/supplier/supplier_page.dart';
 import 'package:AiRi/styles/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:AiRi/components/my_toast.dart';
 import 'package:AiRi/pages/shopping_cart/cart_page.dart';
 import 'package:AiRi/utils/my_navigator.dart';
 
