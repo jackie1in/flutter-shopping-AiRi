@@ -18,7 +18,7 @@ dependencies:
   transparent_image: ^2.0.0
   flutter_swiper_null_safety: ^1.0.2
   cached_network_image: ^3.0.0
-  webview_flutter: ^2.0.7
+  webview_flutter: ^3.0.4
   permission_handler: ^8.0.0+2
   oktoast: ^3.0.0
   dio: ^4.0.0
