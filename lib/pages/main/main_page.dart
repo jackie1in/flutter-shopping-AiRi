@@ -36,7 +36,7 @@ class _MainPageState extends State<MainPage> with AutomaticKeepAliveClientMixin 
     /// 根据iphone X 高度适配,高度去掉 顶部、底部
     return ScreenUtilInit(
       designSize: Size(375, 812 - 44 - 34),
-      builder: (context) => Scaffold(
+      builder: (context, child) => Scaffold(
         backgroundColor: Color(0xfffefefe),
         bottomNavigationBar: MyBottomNavigationBar(onTap: (index) {
           mainState.tabBarPageController.jumpToPage(index);
